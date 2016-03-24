@@ -1,5 +1,7 @@
 {
   "name": "alexsoft/leftpad",
+  "description": "There just should be a leftpad function for PHP",
+  "tags": ["leftpad"],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -14,5 +16,8 @@
     ]
   },
   "minimum-stability": "stable",
-  "require": {}
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^5.2"
+  }
 }

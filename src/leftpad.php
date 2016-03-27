@@ -8,6 +8,6 @@ if (!function_exists('leftpad')) {
      * @return  string
      */
     function leftpad($string, $length, $filler = ' ') {
-        return str_pad($string, $length, substr($filler, 0, 1), STR_PAD_LEFT);
+        return str_pad($string, $length, $filler, STR_PAD_LEFT);
     }
 }

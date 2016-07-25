@@ -7,7 +7,6 @@ linting: true
 enabled:
   - long_array_syntax
   - unalign_double_arrow
-  - single_blank_line_at_eof
 
 disabled:
   - align_double_arrow

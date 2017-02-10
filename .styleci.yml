@@ -1,6 +1,4 @@
 preset: psr2
 
-linting: true
-
 enabled:
   - length_ordered_imports

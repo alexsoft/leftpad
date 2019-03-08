@@ -1,6 +1,8 @@
 <?php
 
-class LeftPadTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class LeftPadTest extends TestCase
 {
     public function testFunction()
     {

@@ -1,4 +1,1 @@
 preset: psr2
-
-enabled:
-  - length_ordered_imports

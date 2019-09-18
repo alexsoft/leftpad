@@ -1,6 +1,6 @@
 # Left Pad for PHP
 
-A whole package is just one file with a single function `leftpad($string, $length, $filler)`
+A whole package is just one file with a single function `leftpad(string $string, int $length, string $filler)`
 
     $string - your initial string
     $length - final length of returned string
@@ -14,4 +14,4 @@ A whole package is just one file with a single function `leftpad($string, $lengt
 
     leftpad('foo', 5) // => "  foo"
 
-    leftpad(1, 3, 0) // => "001"
+    leftpad('1', 3, '0') // => "001"

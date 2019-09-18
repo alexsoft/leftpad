@@ -3,12 +3,6 @@ php:
   - 7.1
   - 7.2
   - 7.3
-  - hhvm
-  - nightly
-matrix:
-  allow_failures:
-    - php: hhvm
-    - php: nightly
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update --prefer-source $PREFER_LOWEST

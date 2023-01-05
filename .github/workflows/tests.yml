@@ -1,0 +1,40 @@
+name: PHPUnit tests
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        php:
+          - 7.4
+          - 8.0
+          - 8.1
+          - 8.2
+        dependencies:
+          - locked
+
+    name: Tests on PHP ${{ matrix.php }} - ${{ matrix.dependencies }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:v2
+          coverage: none
+
+      - name: Composer install
+        uses: ramsey/composer-install@v2
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+
+      - name: Execute tests
+        run: ./vendor/bin/phpunit --verbose

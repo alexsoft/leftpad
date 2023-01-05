@@ -6,8 +6,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Alexey Plekhanov",
-      "email": "alex@plekhanov.us"
+      "name": "Alex Plekhanov",
+      "email": "alex@p7v.app"
     }
   ],
   "autoload": {
@@ -15,11 +15,16 @@
       "src/leftpad.php"
     ]
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
   "minimum-stability": "stable",
   "require": {
-    "php": "^7.1.3"
+    "php": "^7.4 || ~8.0.0 || ~8.1.0 || ~8.2.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7.5.16"
+    "phpunit/phpunit": "^8.5.31 || ^9.5.27"
   }
 }

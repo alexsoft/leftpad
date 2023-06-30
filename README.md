@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/alexsoft/leftpad.svg?style=flat)](https://packagist.org/packages/alexsoft/leftpad)
 
-A whole package is just one file with a single function `leftpad(string $string, int $length, string $filler)`
+A whole package is just one file with a single function `\Alexsoft\Leftpad\leftpad(string $string, int $length, string $filler): string`
 
     $string - your initial string
     $length - final length of returned string

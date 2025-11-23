@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/alexsoft/leftpad/compare/1.1.0...master)
 
+## [1.3.0 - 2025-11-23](https://github.com/alexsoft/leftpad/compare/v1.2.0...1.3.0)
+### Added
+- support of PHP 8.4 and 8.5
+
+## [1.2.0 - 2024-11-05](https://github.com/alexsoft/leftpad/compare/v1.1.0...1.2.0)
+### Added
+- support of PHP 8.3
+
 ## [1.1.0 - 2023-01-05](https://github.com/alexsoft/leftpad/compare/v1.0.3...1.1.0)
 ### Added
 - namespaced function `\Alexsoft\Leftpad\leftpad()`
